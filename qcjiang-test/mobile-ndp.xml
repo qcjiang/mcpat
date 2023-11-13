@@ -18,8 +18,8 @@
 		<param name="homogeneous_L3s" value="1"/>
 		<param name="homogeneous_ccs" value="1"/><!--cache coherence hardware -->
 		<param name="homogeneous_NoCs" value="1"/>
-		<param name="core_tech_node" value="40"/><!-- nm -->
-		<param name="target_core_clockrate" value="2000"/><!--MHz -->
+		<param name="core_tech_node" value="22"/><!-- nm -->
+		<param name="target_core_clockrate" value="2400"/><!--MHz -->
 		<param name="temperature" value="340"/> <!-- Kelvin -->
 		<param name="number_cache_levels" value="2"/>
 		<param name="interconnect_projection_type" value="1"/><!--0: aggressive wire technology; 1: conservative wire technology -->
