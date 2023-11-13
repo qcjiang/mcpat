@@ -21,7 +21,7 @@
 		<param name="core_tech_node" value="22"/><!-- nm -->
 		<param name="target_core_clockrate" value="2400"/><!--MHz -->
 		<param name="temperature" value="340"/> <!-- Kelvin -->
-		<param name="number_cache_levels" value="2"/>
+		<param name="number_cache_levels" value="1"/>
 		<param name="interconnect_projection_type" value="1"/><!--0: aggressive wire technology; 1: conservative wire technology -->
 		<param name="device_type" value="2"/><!--0: HP(High Performance Type); 1: LSTP(Low standby power) 2: LOP (Low Operating Power)  -->
 		<param name="longer_channel_device" value="1"/><!-- 0 no use; 1 use when possible -->
@@ -33,9 +33,9 @@
 		<param name="virtual_memory_page_size" value="4096"/>
 		<!-- address width determines the tag_width in Cache, LSQ and buffers in cache controller 
 			default value is machine_bits, if not set --> 
-		<stat name="total_cycles" value="100000"/>
-		<stat name="idle_cycles" value="0"/>
-		<stat name="busy_cycles"  value="100000"/>
+		<stat name="total_cycles" value="268803503"/>
+		<stat name="idle_cycles" value="67890074"/>
+		<stat name="busy_cycles"  value="200913429"/>
 			<!--This page size(B) is complete different from the page size in Main memo section. this page size is the size of 
 			virtual memory from OS/Archi perspective; the page size in Main memo section is the actual physical line in a DRAM bank  -->
 		<!-- *********************** cores ******************* -->
