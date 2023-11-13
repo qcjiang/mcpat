@@ -127,22 +127,22 @@
 			<param name="RAS_size" value="4"/>						
 			<!-- general stats, defines simulation periods;require total, idle, and busy cycles for sanity check  -->
 			<!-- please note: if target architecture is X86, then all the instructions refer to (fused) micro-ops -->
-			<stat name="total_instructions" value="400000"/>
-			<stat name="int_instructions" value="200000"/>
-			<stat name="fp_instructions" value="100000"/>
-			<stat name="branch_instructions" value="100000"/>
+			<stat name="total_instructions" value="200058993"/>
+			<stat name="int_instructions" value="200058993"/>
+			<stat name="fp_instructions" value="0"/>
+			<stat name="branch_instructions" value="0"/>
 			<stat name="branch_mispredictions" value="0"/>
 			<stat name="load_instructions" value="0"/>
 			<stat name="store_instructions" value="50000"/>
-			<stat name="committed_instructions" value="400000"/>
-			<stat name="committed_int_instructions" value="200000"/>
-			<stat name="committed_fp_instructions" value="100000"/>
+			<stat name="committed_instructions" value="200058993"/>
+			<stat name="committed_int_instructions" value="200058993"/>
+			<stat name="committed_fp_instructions" value="0"/>
 			<stat name="pipeline_duty_cycle" value="1"/><!--<=1, runtime_ipc/peak_ipc; averaged for all cores if homogeneous -->
 			<!-- the following cycle stats are used for heterogeneous cores only, 
 				please ignore them if homogeneous cores -->
-			<stat name="total_cycles" value="100000"/>
-		    <stat name="idle_cycles" value="0"/>
-		    <stat name="busy_cycles"  value="100000"/>
+			<stat name="total_cycles" value="268803503"/>
+		    <stat name="idle_cycles" value="67890074"/>
+		    <stat name="busy_cycles"  value="200913429"/>
 			<!-- instruction buffer stats -->
 			<!-- ROB stats, both RS and Phy based OoOs have ROB
 			performance simulator should capture the difference on accesses,
