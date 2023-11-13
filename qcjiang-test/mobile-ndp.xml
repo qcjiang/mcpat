@@ -41,14 +41,14 @@
 		<!-- *********************** cores ******************* -->
 		<component id="system.core0" name="core0">
 			<!-- Core property -->
-			<param name="clock_rate" value="2000"/>
+			<param name="clock_rate" value="2400"/>
 			<!-- for cores with unknown timing, set to 0 to force off the opt flag -->
 			<param name="opt_local" value="0"/>
 			<param name="instruction_length" value="32"/>
 			<param name="opcode_width" value="7"/>
 			<param name="x86" value="0"/>
 			<param name="micro_opcode_width" value="8"/>
-			<param name="machine_type" value="0"/>
+			<param name="machine_type" value="1"/>
 			<!-- inorder/OoO; 1 inorder; 0 OOO-->
 			<param name="number_hardware_threads" value="1"/>
 			<!-- number_instruction_fetch_ports(icache ports) is always 1 in single-thread processor,
