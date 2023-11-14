@@ -5,8 +5,8 @@
 		<!--Duty cycles in this file are set according to "ARM MPcore
 			ARchitecture performance Enhancement" in MPF Japan 2008 -->
 		<param name="number_of_cores" value="1"/>
-		<param name="number_of_L1Directories" value="1"/>
-		<param name="number_of_L2Directories" value="1"/>
+		<param name="number_of_L1Directories" value="0"/>
+		<param name="number_of_L2Directories" value="0"/>
 		<param name="number_of_L2s" value="1"/> <!-- This number means how many L2 clusters in each cluster there can be multiple banks/ports -->
 		<param name="Private_L2" value="0"/><!--1 Private, 0 shared/coherent -->
 		<param name="number_of_L3s" value="0"/> <!-- This number means how many L3 clusters -->
@@ -267,7 +267,7 @@
 		<component id="system.L1Directory0" name="L1Directory0">
 				<param name="Directory_type" value="0"/>
 			    <!--0 cam based shadowed tag. 1 directory cache -->	
-				<param name="Dir_config" value="2048,1,0,1, 4, 4, 8"/>
+				<param name="Dir_config" value="131072,1,0,1, 4, 4, 8"/>
 				<!-- the parameters are capacity,block_width, associativity,bank, throughput w.r.t. core clock, latency w.r.t. core clock,-->
 			    <param name="buffer_sizes" value="8, 8, 8, 8"/>	
 				<!-- all the buffer related are optional -->
@@ -308,7 +308,7 @@
 		</component>
 		<component id="system.L20" name="L20">
 			<!-- all the buffer related are optional -->
-				<param name="L2_config" value="1048576,32, 8, 8, 8, 23, 32, 1"/> 
+				<param name="L2_config" value="2097152,32, 8, 8, 8, 23, 32, 1"/> 
 				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
 				<param name="buffer_sizes" value="16, 16, 16, 16"/>
 				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
