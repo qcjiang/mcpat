@@ -1,2 +1,1 @@
-../mcpat -infile mobile-ndp.xml  -print_level 5
-
+../mcpat -infile mobile-cpu.xml  -print_level 5 > test
