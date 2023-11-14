@@ -19,7 +19,7 @@
 		<param name="homogeneous_ccs" value="1"/><!--cache coherence hardware -->
 		<param name="homogeneous_NoCs" value="1"/>
 		<param name="core_tech_node" value="22"/><!-- nm -->
-		<param name="target_core_clockrate" value="2000"/><!--MHz -->
+		<param name="target_core_clockrate" value="2400"/><!--MHz -->
 		<param name="temperature" value="340"/> <!-- Kelvin -->
 		<param name="number_cache_levels" value="2"/>
 		<param name="interconnect_projection_type" value="1"/><!--0: aggressive wire technology; 1: conservative wire technology -->
@@ -41,7 +41,7 @@
 		<!-- *********************** cores ******************* -->
 		<component id="system.core0" name="core0">
 			<!-- Core property -->
-			<param name="clock_rate" value="2000"/>
+			<param name="clock_rate" value="2400"/>
 			<!-- for cores with unknown timing, set to 0 to force off the opt flag -->
 			<param name="opt_local" value="0"/>
 			<param name="instruction_length" value="32"/>
@@ -271,7 +271,7 @@
 				<!-- the parameters are capacity,block_width, associativity,bank, throughput w.r.t. core clock, latency w.r.t. core clock,-->
 			    <param name="buffer_sizes" value="8, 8, 8, 8"/>	
 				<!-- all the buffer related are optional -->
-			    <param name="clockrate" value="2000"/>
+			    <param name="clockrate" value="2400"/>
 				<param name="ports" value="1,1,1"/>
 				<!-- number of r, w, and rw search ports -->
 				<param name="device_type" value="2"/>
@@ -292,7 +292,7 @@
 				<!-- the parameters are capacity,block_width, associativity,bank, throughput w.r.t. core clock, latency w.r.t. core clock,-->
 			    <param name="buffer_sizes" value="8, 8, 8, 8"/>	
 				<!-- all the buffer related are optional -->
-			    <param name="clockrate" value="3400"/>
+			    <param name="clockrate" value="2400"/>
 				<param name="ports" value="1,1,1"/>
 				<!-- number of r, w, and rw search ports -->
 				<param name="device_type" value="0"/>
@@ -312,7 +312,7 @@
 				<!-- the parameters are capacity,block_width, associativity, bank, throughput w.r.t. core clock, latency w.r.t. core clock,output_width, cache policy -->
 				<param name="buffer_sizes" value="16, 16, 16, 16"/>
 				<!-- cache controller buffer sizes: miss_buffer_size(MSHR),fill_buffer_size,prefetch_buffer_size,wb_buffer_size-->	
-				<param name="clockrate" value="3400"/>
+				<param name="clockrate" value="2400"/>
 				<param name="ports" value="1,1,1"/>
 				<!-- number of r, w, and rw ports -->
 				<param name="device_type" value="0"/>
@@ -343,7 +343,7 @@
 		</component>
 <!--**********************************************************************-->
 		<component id="system.NoC0" name="noc0">
-			<param name="clockrate" value="2000"/>
+			<param name="clockrate" value="2400"/>
 			<param name="type" value="0"/>
 			<!--0:bus, 1:NoC , for bus no matter how many nodes sharing the bus
 				at each time only one node can send req -->
